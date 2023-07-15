@@ -37,7 +37,7 @@ app.post("/", function(req, res) {
 
     const options =   {
         method: "POST",
-        auth: "ananyaP:f1ca6648997b91d53f668f5d68515002-us8"
+        auth: "ananyaP:beee46b94728c208f12c62a081550961-us8"
     }
     const request = https.request(url, options, function(response) {
         
@@ -63,10 +63,10 @@ app.post("/failure", function(req, res) {
     res.redirect("/");
 })
 
-app.listen(3000 , function() {
+app.listen(process.env.PORT || 3000 , function() {
     console.log("Server started on port 3000 !");
 })
 
-// f1ca6648997b91d53f668f5d68515002-us8
+// beee46b94728c208f12c62a081550961-us8
 
 // b1a8b6dc2d
